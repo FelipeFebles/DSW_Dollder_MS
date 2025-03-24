@@ -1,0 +1,1732 @@
+[
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Acciones.CRUD_Actualizar_AccionesController",
+    "Method": "Actualizar_Acciones",
+    "RelativePath": "api/CRUD_Actualizar_Acciones/Actualizar_Acciones",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Requests.AccionesCorrectivas.AccionesRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Responses.Acciones.IdAccionesResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.NoConformidad.CRUD_Actualizar_NoConformidadController",
+    "Method": "Actualizar_NoConformidad",
+    "RelativePath": "api/CRUD_Actualizar_NoConformidad/Actualizar_NoConformidad",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Requests.NoConformidad.NoConformidadRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Responses.NoConformidad.IdNoConformidadResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "ApiMS.Controllers.Reporte.CRUD_Actualizar_ReporteController",
+    "Method": "ActualizarReporte",
+    "RelativePath": "api/CRUD_Actualizar_Reporte/Actualizar_Reporte",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Requests.Reportes.ReporteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Responses.Reportes.IdReporteResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "ApiMS.Controllers.Reporte.CRUD_Actualizar_ReporteController",
+    "Method": "ActualizarRevisionReporte",
+    "RelativePath": "api/CRUD_Actualizar_Reporte/Actualizar_RevisionReporte",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Requests.RevisionReporte.RevisionReporteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Responses.RevisionReporte.IdRevisionReporteResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Responsable.CRUD_Actualizar_ResponsableController",
+    "Method": "Actualizar_Responsable",
+    "RelativePath": "api/CRUD_Actualizar_Responsable/Actualizar_Responsable",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Requests.Responsables.ResponsableRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Responses.Responsable.IdResponsableResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Usuarios.CRUD_Actualizar_UsuarioController",
+    "Method": "ActualizarUsuario",
+    "RelativePath": "api/CRUD_Actualizar_Usuario/Actualizar_Usuario",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Requests.Usuarios.UsuarioRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Responses.Usuarios.IdUsuarioResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiCierrees_Dollder_MS.Controllers.Cierre.CRUD_ActualizarCierreController",
+    "Method": "Actualizar_Cierre",
+    "RelativePath": "api/CRUD_ActualizarCierre/Actualizar_Cierre",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Aplication.Requests.Cierre.CierreRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.Cierre.IdCierreResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Departamentos.CRUD_ActualizarDepartamentoController",
+    "Method": "ActualizarDepartamento",
+    "RelativePath": "api/CRUD_ActualizarDepartamento/Actualizar_Departamento",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Requests.Departamento.DepartamentoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.Departamento.IdDepartamentoResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Seguimiento.CRUD_ActualizarSeguimientoController",
+    "Method": "Actualizar_Seguimiento",
+    "RelativePath": "api/CRUD_ActualizarSeguimiento/Actualizar_Seguimiento",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Aplication.Requests.Seguimiento.SeguimientoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.Seguimiento.IdSeguimientoReponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Acciones.CRUD_Agregar_AccionesController",
+    "Method": "Agregar_Acciones",
+    "RelativePath": "api/CRUD_Agregar_Acciones/Agregar_Acciones",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Requests.AccionesCorrectivas.AccionesRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Responses.Acciones.IdAccionesResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.NoConformidades.CRUD_Agregar_NoConformidadController",
+    "Method": "Agregar_NoConformidad",
+    "RelativePath": "api/CRUD_Agregar_NoConformidad/Agregar_NoConformidad",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Requests.NoConformidad.NoConformidadRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Responses.NoConformidad.IdNoConformidadResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Reporte.CRUD_Agregar_ReporteController",
+    "Method": "AgregarReporte",
+    "RelativePath": "api/CRUD_Agregar_Reporte/Agregar_Reporte",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Requests.Reportes.ReporteRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Responses.Reportes.IdReporteResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Responsable.CRUD_Agregar_ResponsableController",
+    "Method": "Agregar_Responsable",
+    "RelativePath": "api/CRUD_Agregar_Responsable/Agregar_Responsable",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Requests.Responsables.ResponsableRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Responses.Responsable.IdResponsableResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Usuarios.CRUD_Agregar_UsuarioController",
+    "Method": "AgregarUsuario",
+    "RelativePath": "api/CRUD_Agregar_Usuario/Agregar_Usuario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Requests.Usuarios.UsuarioRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Responses.Usuarios.IdUsuarioResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Cierre.CRUD_AgregarCierreController",
+    "Method": "Agregar_Cierre",
+    "RelativePath": "api/CRUD_AgregarCierre/Agregar_Cierre",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Aplication.Requests.Cierre.CierreRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.Cierre.IdCierreResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Departamentos.CRUD_AgregarDepartamentoController",
+    "Method": "Agregar_Departamento",
+    "RelativePath": "api/CRUD_AgregarDepartamento/Agregar_Departamento",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Requests.Departamento.DepartamentoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.Departamento.IdDepartamentoResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Indicador.CRUD_AgregarIndicadoresController",
+    "Method": "Agregar_IndicadorCausa",
+    "RelativePath": "api/CRUD_AgregarIndicadores/Agregar_IndicadorCausa",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Aplication.Requests.Indicadores.IndicadorCausaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.Indicadores.IdIndicadoresResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Indicador.CRUD_AgregarIndicadoresController",
+    "Method": "Agregar_Indicadores",
+    "RelativePath": "api/CRUD_AgregarIndicadores/Agregar_Indicadores",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Aplication.Requests.Indicadores.IndicadoresRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.Indicadores.IdIndicadoresResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Indicador.CRUD_AgregarIndicadoresController",
+    "Method": "Agregar_IndicadorOrigen",
+    "RelativePath": "api/CRUD_AgregarIndicadores/Agregar_IndicadorOrigen",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Aplication.Requests.Indicadores.IndicadorOrigenRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.Indicadores.IdIndicadoresResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Seguimiento.CRUD_AgregarSeguimientoController",
+    "Method": "Agregar_Seguimiento",
+    "RelativePath": "api/CRUD_AgregarSeguimiento/Agregar_Seguimiento",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Aplication.Requests.Seguimiento.SeguimientoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.Seguimiento.IdSeguimientoReponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.VerificacionEfectividad.CRUD_AgregarVerificacionEfectividadController",
+    "Method": "Agregar_VerificacionEfectividad",
+    "RelativePath": "api/CRUD_AgregarVerificacionEfectividad/Agregar_VerificacionEfectividad",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Aplication.Requests.VerificacionEfectividad.VerificacionEfectividadRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.VerificacionEfectividad.IdVerificacionEfectividadResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.NoConformidad.CRUD_Buscar_NoConformidadController",
+    "Method": "BuscarNoConformidad",
+    "RelativePath": "api/CRUD_Buscar_NoConformidad/BuscarNoConformidad",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Data",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.NoConformidad.NoConformidadesResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.NoConformidad.CRUD_Buscar_NoConformidadController",
+    "Method": "BuscarNoConformidadCompleta",
+    "RelativePath": "api/CRUD_Buscar_NoConformidad/BuscarNoConformidadCompleta",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Data",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.NoConformidad.NoConformidadesResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.NoConformidad.CRUD_Buscar_NoConformidadController",
+    "Method": "BuscarTodasNoConformidades",
+    "RelativePath": "api/CRUD_Buscar_NoConformidad/BuscarTodasNoConformidades",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.NoConformidad.NoConformidadesResponse, DSW_ApiNoConformidades-Dollder_MS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Notificaciones.CRUD_Buscar_NotificacionesController",
+    "Method": "BuscarNotificaciones",
+    "RelativePath": "api/CRUD_Buscar_Notificaciones/BuscarNotificaciones",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.Notificaciones.NotificacionesResponse, DSW_ApiNoConformidades-Dollder_MS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Reporte.CRUD_Buscar_ReporteController",
+    "Method": "BuscarReporte",
+    "RelativePath": "api/CRUD_Buscar_Reporte/BuscarReporte",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "detectado_por",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "area",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "titulo",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "descripcion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "estado",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "departamento_emisor",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "imagenes",
+        "Type": "System.Collections.Generic.List\u00601[[DSW_ApiNoConformidades_Dollder_MS.Aplication.Requests.Reportes.ImagenReporteRequest, DSW_ApiNoConformidades-Dollder_MS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "id_usuario",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.revisado_por",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.consecuencias",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.responsables_cargo",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.areas_involucradas",
+        "Type": "System.Collections.Generic.List\u00601[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.prioridad",
+        "Type": "System.Nullable\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.estado",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.numero_expedicion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.reporte_Id",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.responsables",
+        "Type": "System.Collections.Generic.List\u00601[[DSW_ApiNoConformidades_Dollder_MS.Application.Requests.Responsables.ResponsableRequest, DSW_ApiNoConformidades-Dollder_MS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.conforme",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.observaciones",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.responsable",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.fecha_verificacion",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.noConformidad_Id",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.indicadores.origen.origen",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.indicadores.origen.indicador_Id",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.indicadores.origen.Id",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.indicadores.origen.CreatedAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.indicadores.origen.CreatedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.indicadores.origen.UpdatedAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.indicadores.origen.UpdatedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.indicadores.causa",
+        "Type": "System.Collections.Generic.List\u00601[[DSW_ApiNoConformidades_Dollder_MS.Aplication.Requests.Indicadores.IndicadorCausaRequest, DSW_ApiNoConformidades-Dollder_MS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.indicadores.origen_Id",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.indicadores.cierre_Id",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.indicadores.Id",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.indicadores.CreatedAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.indicadores.CreatedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.indicadores.UpdatedAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.indicadores.UpdatedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.verificacionEfectividad.efectiva",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.verificacionEfectividad.observaciones",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.verificacionEfectividad.realizado_por",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.verificacionEfectividad.cierre_Id",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.verificacionEfectividad.Id",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.verificacionEfectividad.CreatedAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.verificacionEfectividad.CreatedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.verificacionEfectividad.UpdatedAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.verificacionEfectividad.UpdatedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.Id",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.CreatedAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.CreatedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.UpdatedAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.UpdatedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.seguimientos",
+        "Type": "System.Collections.Generic.List\u00601[[DSW_ApiNoConformidades_Dollder_MS.Aplication.Requests.Seguimiento.SeguimientoRequest, DSW_ApiNoConformidades-Dollder_MS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.Id",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.CreatedAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.CreatedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.UpdatedAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.UpdatedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "revisionReporte.nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "revisionReporte.id_usuario",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "revisionReporte.id_reporte",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "revisionReporte.Id",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "revisionReporte.CreatedAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "revisionReporte.CreatedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "revisionReporte.UpdatedAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "revisionReporte.UpdatedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Id",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CreatedAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CreatedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UpdatedAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "UpdatedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.Reportes.ReporteResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Reporte.CRUD_Buscar_ReporteController",
+    "Method": "BuscarReporteID",
+    "RelativePath": "api/CRUD_Buscar_Reporte/BuscarReporteID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Guid",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Reporte.CRUD_Buscar_ReporteController",
+    "Method": "BuscarReportesID",
+    "RelativePath": "api/CRUD_Buscar_Reporte/BuscarReportesID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.Reportes.ReporteResponse, DSW_ApiNoConformidades-Dollder_MS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Reporte.CRUD_Buscar_ReporteController",
+    "Method": "BuscarRevisionReporte",
+    "RelativePath": "api/CRUD_Buscar_Reporte/BuscarRevisionReporte",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "nombre",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "id_usuario",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "id_reporte",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Id",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CreatedAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "CreatedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "UpdatedAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "UpdatedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.RevisionReporte.RevisionReporteResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Responsable.CRUD_Buscar_ResponsableController",
+    "Method": "BuscarResponsable",
+    "RelativePath": "api/CRUD_Buscar_Responsable/BuscarResponsable",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Requests.BuscarUsuarioIDRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.Responsable.ResponsableResponse, DSW_ApiNoConformidades-Dollder_MS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.CRUD_Buscar_UsuarioController",
+    "Method": "BuscarUsuario",
+    "RelativePath": "api/CRUD_Buscar_Usuario/BuscarUsuario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[DSW_ApiNoConformidades_Dollder_MS.Application.Responses.Usuarios.UsuarioResponse, DSW_ApiNoConformidades-Dollder_MS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.CRUD_Buscar_UsuarioController",
+    "Method": "BuscarUsuario_Correo",
+    "RelativePath": "api/CRUD_Buscar_Usuario/BuscarUsuario_Correo",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[DSW_ApiNoConformidades_Dollder_MS.Application.Responses.Usuarios.UsuarioResponse, DSW_ApiNoConformidades-Dollder_MS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.CRUD_Buscar_UsuarioController",
+    "Method": "BuscarUsuario_Departamento",
+    "RelativePath": "api/CRUD_Buscar_Usuario/BuscarUsuario_Departamento",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[DSW_ApiNoConformidades_Dollder_MS.Application.Responses.Usuarios.UsuarioResponse, DSW_ApiNoConformidades-Dollder_MS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.CRUD_Buscar_UsuarioController",
+    "Method": "BuscarUsuario_ID",
+    "RelativePath": "api/CRUD_Buscar_Usuario/BuscarUsuario_ID",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Responses.Usuarios.UsuarioResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.CRUD_Buscar_UsuarioController",
+    "Method": "BuscarUsuarioLogin",
+    "RelativePath": "api/CRUD_Buscar_Usuario/BuscarUsuario_Login",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "pass",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Responses.Usuarios.UsuarioResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.CRUD_Buscar_UsuarioController",
+    "Method": "BuscarUsuario_Usuario",
+    "RelativePath": "api/CRUD_Buscar_Usuario/BuscarUsuario_Usuario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[DSW_ApiNoConformidades_Dollder_MS.Application.Responses.Usuarios.UsuarioResponse, DSW_ApiNoConformidades-Dollder_MS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Departamentos.CRUD_BuscarDepartamentoController",
+    "Method": "BuscarDepartamentos",
+    "RelativePath": "api/CRUD_BuscarDepartamento/BuscarDepartamentos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[DSW_ApiNoConformidades_Dollder_MS.Application.Responses.Departamento.DepartamentoResponse, DSW_ApiNoConformidades-Dollder_MS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Indicador.CRUD_BuscarIndicadoresController",
+    "Method": "BuscarIndicadoresCausa",
+    "RelativePath": "api/CRUD_BuscarIndicadores/BuscarIndicadoresCausa",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.Indicadores.IndicadorCausaResponse, DSW_ApiNoConformidades-Dollder_MS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Indicador.CRUD_BuscarIndicadoresController",
+    "Method": "BuscarIndicadoresOrigen",
+    "RelativePath": "api/CRUD_BuscarIndicadores/BuscarIndicadoresOrigen",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.Indicadores.IndicadorOrigenResponse, DSW_ApiNoConformidades-Dollder_MS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.TestController",
+    "Method": "Get",
+    "RelativePath": "api/Test",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  }
+]

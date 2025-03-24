@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <RootNamespace>DSW_ApiNoConformidades_Dollder_MS.Aplication</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.1" />
+    <PackageReference Include="Microsoft.Extensions.Logging.ApplicationInsights" Version="2.22.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DSW_ApiNoConformidades-Dollder_MS.Core\DSW_ApiNoConformidades-Dollder_MS.Core.csproj" />
+    <ProjectReference Include="..\DSW_ApiNoConformidades-Dollder_MS.Infrastructure\DSW_ApiNoConformidades-Dollder_MS.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,6 @@
+@DSW_ApiNoConformidades_Dollder_MS_HostAddress = http://localhost:5032
+
+GET {{DSW_ApiNoConformidades_Dollder_MS_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
