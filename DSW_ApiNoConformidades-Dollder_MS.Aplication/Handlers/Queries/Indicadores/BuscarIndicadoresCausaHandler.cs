@@ -45,7 +45,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Queries.Indicado
                 _logger.LogInformation("ConsultarUsuarioIdQueryHandler.HandleAsync");
 
                 // Crear una lista para almacenar los resultados
-                var list = _dbContext.IndicadorOrigen
+                var list = _dbContext.IndicadorCausa
                     .Select(x => new IndicadorCausaResponse
                     {
                         Id = x.Id,
@@ -53,7 +53,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Queries.Indicado
                         CreatedBy = x.CreatedBy,
                         UpdatedAt = x.UpdatedAt,
                         UpdatedBy = x.UpdatedBy,
-                        causa = x.origen,
+                        causa = x.causa,
 
                     })
                     .ToList();

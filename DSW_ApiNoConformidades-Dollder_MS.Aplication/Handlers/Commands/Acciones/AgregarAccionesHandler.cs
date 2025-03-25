@@ -57,6 +57,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Commands.Accion
                 var dep = _dbContext.Departamento.Where(d => d.Id == usuario.departamento_Id).FirstOrDefault();
 
                 request._request.cargo_usuario = dep.cargo;
+                request._request.area = usuario.departamento.cargo;
                 var responsable = _dbContext.Responsable.Where(r => r.Id == request._request.responsable_Id).FirstOrDefault();
                 var envia = _dbContext.Usuario.Where(u => u.Id == responsable.usuario_Id).FirstOrDefault();
 

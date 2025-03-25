@@ -79,6 +79,14 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Commands.Cierre
                 var response2 = IndicadoresMapper.MapRequestIndicadoresEntity(request._request.indicadores);
                 _dbContext.Indicadores.Add(response2);
                 await _dbContext.SaveEfContextChanges("APP");
+
+                foreach (var causa in request._request.indicadores.causa) 
+                {
+                    var response3 = IndicadoresMapper.MapRequestR_Indicadores_CausasEntity((Guid)causa.Id, response2.Id);
+                    _dbContext.R_Indicadores_Causas.Add(response3);
+                    await _dbContext.SaveEfContextChanges("APP");
+                }
+
                 transaccion.Commit();
 
 

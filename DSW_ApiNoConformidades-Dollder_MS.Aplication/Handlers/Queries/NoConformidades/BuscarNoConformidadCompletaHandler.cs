@@ -87,6 +87,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Queries.NoConfor
                         CreatedBy = revisadorPor.CreatedBy,
                         UpdatedAt = revisadorPor.UpdatedAt,
                         UpdatedBy = revisadorPor.UpdatedBy,
+                        estado = revisadorPor.estado,
 
                         nombre = revisadorPor.nombre,
                     },
@@ -120,6 +121,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Queries.NoConfor
                         response.imagenes.Add(new ImagenReporteResponse
                         {
                             Id = img.Id,
+                            estado= img.estado,
                             imagen = img.imagen,
                             nombre_archivo = img.nombre_archivo
                         });
@@ -144,6 +146,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Queries.NoConfor
                             CreatedBy = resp.CreatedBy,
                             UpdatedAt = resp.UpdatedAt,
                             UpdatedBy = resp.UpdatedBy,
+                            estado = resp.estado,
 
                             usuario_Id = resp.usuario_Id,
 
@@ -255,6 +258,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Queries.NoConfor
                             CreatedBy = seg.CreatedBy,
                             UpdatedAt = seg.UpdatedAt,
                             UpdatedBy = seg.UpdatedBy,
+                            estado = seg.estado,
 
                             fecha_seguimiento = seg.fecha_seguimiento,
                             estatus = seg.estatus,
@@ -275,6 +279,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Queries.NoConfor
                         CreatedBy = cierre.CreatedBy,
                         UpdatedAt = cierre.UpdatedAt,
                         UpdatedBy = cierre.UpdatedBy,
+                        estado= cierre.estado,
 
                         conforme = cierre.conforme,
                         observaciones = cierre.observaciones,
@@ -294,6 +299,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Queries.NoConfor
                             CreatedBy = indicador.CreatedBy,
                             UpdatedAt = indicador.UpdatedAt,
                             UpdatedBy = indicador.UpdatedBy,
+                            estado = indicador.estado,
 
                             origen_Id = indicador.origen_Id,
                         };
@@ -328,6 +334,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Queries.NoConfor
                             CreatedBy = verificacionEfectividad.CreatedBy,
                             UpdatedAt = verificacionEfectividad.UpdatedAt,
                             UpdatedBy = verificacionEfectividad.UpdatedBy,
+                            estado = verificacionEfectividad.estado,
 
                             efectiva = verificacionEfectividad.efectiva,
                             realizado_por = verificacionEfectividad.realizado_por,

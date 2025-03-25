@@ -69,11 +69,14 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Queries.Usuarios
                     {
                         Id = c.Id,
                         usuario = c.usuario,
+                        nombre = c.nombre,
+                        apellido = c.apellido,
                         discriminator = EF.Property<string>(c, "Discriminator"),
                         estado = c.estado,
                         departamento = new DepartamentoResponse // Asigna el departamento correspondiente
                         {
                             id = c.departamento.Id,
+                            cargo = c.departamento.cargo,
                         }
                     }).FirstOrDefault();
 

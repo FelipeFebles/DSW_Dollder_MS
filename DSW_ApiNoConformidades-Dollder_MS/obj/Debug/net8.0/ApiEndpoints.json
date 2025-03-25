@@ -1022,6 +1022,11 @@
         "IsRequired": false
       },
       {
+        "Name": "noConformidad.cierre.indicadores.origen.estado",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
         "Name": "noConformidad.cierre.indicadores.causa",
         "Type": "System.Collections.Generic.List\u00601[[DSW_ApiNoConformidades_Dollder_MS.Aplication.Requests.Indicadores.IndicadorCausaRequest, DSW_ApiNoConformidades-Dollder_MS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "IsRequired": false
@@ -1059,6 +1064,11 @@
       {
         "Name": "noConformidad.cierre.indicadores.UpdatedBy",
         "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.indicadores.estado",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       },
       {
@@ -1107,6 +1117,11 @@
         "IsRequired": false
       },
       {
+        "Name": "noConformidad.cierre.verificacionEfectividad.estado",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
         "Name": "noConformidad.cierre.Id",
         "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
@@ -1129,6 +1144,11 @@
       {
         "Name": "noConformidad.cierre.UpdatedBy",
         "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.cierre.estado",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       },
       {
@@ -1199,6 +1219,11 @@
       {
         "Name": "revisionReporte.UpdatedBy",
         "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "revisionReporte.estado",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       },
       {
@@ -1364,6 +1389,11 @@
       {
         "Name": "UpdatedBy",
         "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "estado",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       }
     ],

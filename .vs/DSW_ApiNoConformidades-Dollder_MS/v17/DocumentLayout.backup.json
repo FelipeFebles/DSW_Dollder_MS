@@ -1,12 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\luisf\\source\\repos\\FelipeFebles\\DSW_Dollder_MS\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\lfebles\\source\\FelipeFebles\\DSW_Dollder_MS\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4FF8F48A-DFD8-4C82-8FF4-3279BF013C5D}|DSW_ApiNoConformidades-Dollder_MS.Aplication\\DSW_ApiNoConformidades-Dollder_MS.Application.csproj|c:\\users\\lfebles\\source\\felipefebles\\dsw_dollder_ms\\dsw_apinoconformidades-dollder_ms.aplication\\handlers\\commands\\acciones\\agregaraccioneshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FF8F48A-DFD8-4C82-8FF4-3279BF013C5D}|DSW_ApiNoConformidades-Dollder_MS.Aplication\\DSW_ApiNoConformidades-Dollder_MS.Application.csproj|solutionrelative:dsw_apinoconformidades-dollder_ms.aplication\\handlers\\commands\\acciones\\agregaraccioneshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FF8F48A-DFD8-4C82-8FF4-3279BF013C5D}|DSW_ApiNoConformidades-Dollder_MS.Aplication\\DSW_ApiNoConformidades-Dollder_MS.Application.csproj|c:\\users\\lfebles\\source\\felipefebles\\dsw_dollder_ms\\dsw_apinoconformidades-dollder_ms.aplication\\handlers\\queries\\noconformidades\\buscarnoconformidadcompletahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FF8F48A-DFD8-4C82-8FF4-3279BF013C5D}|DSW_ApiNoConformidades-Dollder_MS.Aplication\\DSW_ApiNoConformidades-Dollder_MS.Application.csproj|solutionrelative:dsw_apinoconformidades-dollder_ms.aplication\\handlers\\queries\\noconformidades\\buscarnoconformidadcompletahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 786,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AgregarAccionesHandler.cs",
+              "DocumentMoniker": "C:\\Users\\lfebles\\source\\FelipeFebles\\DSW_Dollder_MS\\DSW_ApiNoConformidades-Dollder_MS.Aplication\\Handlers\\Commands\\Acciones\\AgregarAccionesHandler.cs",
+              "RelativeDocumentMoniker": "DSW_ApiNoConformidades-Dollder_MS.Aplication\\Handlers\\Commands\\Acciones\\AgregarAccionesHandler.cs",
+              "ToolTip": "C:\\Users\\lfebles\\source\\FelipeFebles\\DSW_Dollder_MS\\DSW_ApiNoConformidades-Dollder_MS.Aplication\\Handlers\\Commands\\Acciones\\AgregarAccionesHandler.cs",
+              "RelativeToolTip": "DSW_ApiNoConformidades-Dollder_MS.Aplication\\Handlers\\Commands\\Acciones\\AgregarAccionesHandler.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowD0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T19:46:49.528Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BuscarNoConformidadCompletaHandler.cs",
+              "DocumentMoniker": "C:\\Users\\lfebles\\source\\FelipeFebles\\DSW_Dollder_MS\\DSW_ApiNoConformidades-Dollder_MS.Aplication\\Handlers\\Queries\\NoConformidades\\BuscarNoConformidadCompletaHandler.cs",
+              "RelativeDocumentMoniker": "DSW_ApiNoConformidades-Dollder_MS.Aplication\\Handlers\\Queries\\NoConformidades\\BuscarNoConformidadCompletaHandler.cs",
+              "ToolTip": "C:\\Users\\lfebles\\source\\FelipeFebles\\DSW_Dollder_MS\\DSW_ApiNoConformidades-Dollder_MS.Aplication\\Handlers\\Queries\\NoConformidades\\BuscarNoConformidadCompletaHandler.cs",
+              "RelativeToolTip": "DSW_ApiNoConformidades-Dollder_MS.Aplication\\Handlers\\Queries\\NoConformidades\\BuscarNoConformidadCompletaHandler.cs",
+              "ViewState": "AgIAAG4AAAAAAAAAAAAwwMIAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T19:18:35.881Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

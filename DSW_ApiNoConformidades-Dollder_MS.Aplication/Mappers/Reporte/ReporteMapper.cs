@@ -12,6 +12,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Mappers.Reporte
                 detectado_por = request.detectado_por,
                 area = request.area,
                 titulo = request.titulo,
+                estado = request.estado,
                 descripcion = request.descripcion,
                 usuario_Id = id,
                 departamento_emisor = request.departamento_emisor,
