@@ -79,6 +79,11 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Commands.Usuari
                         }
                     }
                 }
+                if (request._request.id_departamento != null) 
+                {
+                    usuario.departamento_Id = (Guid)request._request.id_departamento;
+                    
+                }
 
                 // Guardar cambios
                 _dbContext.ChangeEntityState(usuario, EntityState.Modified);

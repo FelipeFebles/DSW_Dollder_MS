@@ -50,6 +50,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Commands.Departa
                     throw new InvalidOperationException("Registro fallido: el Departamento YA existe");
                 }
                 // Crear una instancia de Responsable con los datos del request
+                request._request.estado = true;
                 var entity = DepartamentoMapper.MapRequestDepartamentoEntity(request._request);
 
                 // Agregar el usuario al DbContext

@@ -6,17 +6,17 @@ using Microsoft.Extensions.Logging;
 
 namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Queries.Departamento
 {
-    public class BuscarDepartamentoHandler : IRequestHandler<BuscarDepartamentoQuery, List<DepartamentoResponse>>
+    public class BuscarIdDepartamentoHandler : IRequestHandler<BuscarIdDepartamentoQuery, DepartamentoResponse>
     {
         private readonly ApiDbContext _dbContext;
-        private readonly ILogger<BuscarDepartamentoHandler> _logger;
-        public BuscarDepartamentoHandler(ApiDbContext dbContext, ILogger<BuscarDepartamentoHandler> logger)
+        private readonly ILogger<BuscarIdDepartamentoHandler> _logger;
+        public BuscarIdDepartamentoHandler(ApiDbContext dbContext, ILogger<BuscarIdDepartamentoHandler> logger)
         {
             _dbContext = dbContext;
             _logger = logger;
         }
 
-        public Task<List<DepartamentoResponse>> Handle(BuscarDepartamentoQuery request, CancellationToken cancellationToken)
+        public Task<DepartamentoResponse> Handle(BuscarIdDepartamentoQuery request, CancellationToken cancellationToken)
         {
             try
             {
@@ -38,12 +38,12 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Queries.Departam
             }
         }
 
-        private async Task<List<DepartamentoResponse>> HandleAsync(BuscarDepartamentoQuery request)
+        private async Task<DepartamentoResponse> HandleAsync(BuscarIdDepartamentoQuery request)
         {
 
             try
             {
-                var departamento = _dbContext.Departamento.Where(c => c.estado == true) //Busca los departamentos activos
+                var departamento = _dbContext.Departamento.Where(c => c.Id == request._request.Data)
                     .Select(c => new DepartamentoResponse // Asigna el departamento correspondiente
                     {
                         id = c.Id,
@@ -55,8 +55,8 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Queries.Departam
 
                         nombreDepartamento = c.nombre,
                         cargo = c.cargo
-                    }).OrderBy(c=> c.nombreDepartamento)
-                    .ToList();
+                    }).OrderBy(c => c.nombreDepartamento)
+                    .FirstOrDefault();
 
 
                 return departamento; //Retorno la lista

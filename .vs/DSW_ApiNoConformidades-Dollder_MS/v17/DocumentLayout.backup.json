@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\lfebles\\source\\FelipeFebles\\DSW_Dollder_MS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4FF8F48A-DFD8-4C82-8FF4-3279BF013C5D}|DSW_ApiNoConformidades-Dollder_MS.Aplication\\DSW_ApiNoConformidades-Dollder_MS.Application.csproj|c:\\users\\lfebles\\source\\felipefebles\\dsw_dollder_ms\\dsw_apinoconformidades-dollder_ms.aplication\\handlers\\commands\\acciones\\agregaraccioneshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FF8F48A-DFD8-4C82-8FF4-3279BF013C5D}|DSW_ApiNoConformidades-Dollder_MS.Aplication\\DSW_ApiNoConformidades-Dollder_MS.Application.csproj|solutionrelative:dsw_apinoconformidades-dollder_ms.aplication\\handlers\\commands\\acciones\\agregaraccioneshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4FF8F48A-DFD8-4C82-8FF4-3279BF013C5D}|DSW_ApiNoConformidades-Dollder_MS.Aplication\\DSW_ApiNoConformidades-Dollder_MS.Application.csproj|c:\\users\\lfebles\\source\\felipefebles\\dsw_dollder_ms\\dsw_apinoconformidades-dollder_ms.aplication\\handlers\\commands\\departamento\\agregardepartamentohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FF8F48A-DFD8-4C82-8FF4-3279BF013C5D}|DSW_ApiNoConformidades-Dollder_MS.Aplication\\DSW_ApiNoConformidades-Dollder_MS.Application.csproj|solutionrelative:dsw_apinoconformidades-dollder_ms.aplication\\handlers\\commands\\departamento\\agregardepartamentohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4FF8F48A-DFD8-4C82-8FF4-3279BF013C5D}|DSW_ApiNoConformidades-Dollder_MS.Aplication\\DSW_ApiNoConformidades-Dollder_MS.Application.csproj|c:\\users\\lfebles\\source\\felipefebles\\dsw_dollder_ms\\dsw_apinoconformidades-dollder_ms.aplication\\handlers\\queries\\noconformidades\\buscarnoconformidadcompletahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4FF8F48A-DFD8-4C82-8FF4-3279BF013C5D}|DSW_ApiNoConformidades-Dollder_MS.Aplication\\DSW_ApiNoConformidades-Dollder_MS.Application.csproj|solutionrelative:dsw_apinoconformidades-dollder_ms.aplication\\handlers\\queries\\noconformidades\\buscarnoconformidadcompletahandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{68E84EB7-7213-4CA3-A7BC-CB607FAC4D37}|DSW_ApiNoConformidades-Dollder_MS\\DSW_ApiNoConformidades-Dollder_MS.csproj|c:\\users\\lfebles\\source\\felipefebles\\dsw_dollder_ms\\dsw_apinoconformidades-dollder_ms\\controllers\\departamentos\\crud_agregardepartamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68E84EB7-7213-4CA3-A7BC-CB607FAC4D37}|DSW_ApiNoConformidades-Dollder_MS\\DSW_ApiNoConformidades-Dollder_MS.csproj|solutionrelative:dsw_apinoconformidades-dollder_ms\\controllers\\departamentos\\crud_agregardepartamentocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,27 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AgregarAccionesHandler.cs",
-              "DocumentMoniker": "C:\\Users\\lfebles\\source\\FelipeFebles\\DSW_Dollder_MS\\DSW_ApiNoConformidades-Dollder_MS.Aplication\\Handlers\\Commands\\Acciones\\AgregarAccionesHandler.cs",
-              "RelativeDocumentMoniker": "DSW_ApiNoConformidades-Dollder_MS.Aplication\\Handlers\\Commands\\Acciones\\AgregarAccionesHandler.cs",
-              "ToolTip": "C:\\Users\\lfebles\\source\\FelipeFebles\\DSW_Dollder_MS\\DSW_ApiNoConformidades-Dollder_MS.Aplication\\Handlers\\Commands\\Acciones\\AgregarAccionesHandler.cs",
-              "RelativeToolTip": "DSW_ApiNoConformidades-Dollder_MS.Aplication\\Handlers\\Commands\\Acciones\\AgregarAccionesHandler.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAowD0AAAAQAAAAAAAAAA==",
+              "Title": "AgregarDepartamentoHandler.cs",
+              "DocumentMoniker": "C:\\Users\\lfebles\\source\\FelipeFebles\\DSW_Dollder_MS\\DSW_ApiNoConformidades-Dollder_MS.Aplication\\Handlers\\Commands\\Departamento\\AgregarDepartamentoHandler.cs",
+              "RelativeDocumentMoniker": "DSW_ApiNoConformidades-Dollder_MS.Aplication\\Handlers\\Commands\\Departamento\\AgregarDepartamentoHandler.cs",
+              "ToolTip": "C:\\Users\\lfebles\\source\\FelipeFebles\\DSW_Dollder_MS\\DSW_ApiNoConformidades-Dollder_MS.Aplication\\Handlers\\Commands\\Departamento\\AgregarDepartamentoHandler.cs",
+              "RelativeToolTip": "DSW_ApiNoConformidades-Dollder_MS.Aplication\\Handlers\\Commands\\Departamento\\AgregarDepartamentoHandler.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAA9wDQAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T19:46:49.528Z",
+              "WhenOpened": "2025-03-26T18:57:36.809Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BuscarNoConformidadCompletaHandler.cs",
-              "DocumentMoniker": "C:\\Users\\lfebles\\source\\FelipeFebles\\DSW_Dollder_MS\\DSW_ApiNoConformidades-Dollder_MS.Aplication\\Handlers\\Queries\\NoConformidades\\BuscarNoConformidadCompletaHandler.cs",
-              "RelativeDocumentMoniker": "DSW_ApiNoConformidades-Dollder_MS.Aplication\\Handlers\\Queries\\NoConformidades\\BuscarNoConformidadCompletaHandler.cs",
-              "ToolTip": "C:\\Users\\lfebles\\source\\FelipeFebles\\DSW_Dollder_MS\\DSW_ApiNoConformidades-Dollder_MS.Aplication\\Handlers\\Queries\\NoConformidades\\BuscarNoConformidadCompletaHandler.cs",
-              "RelativeToolTip": "DSW_ApiNoConformidades-Dollder_MS.Aplication\\Handlers\\Queries\\NoConformidades\\BuscarNoConformidadCompletaHandler.cs",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAwwMIAAAA2AAAAAAAAAA==",
+              "Title": "CRUD_AgregarDepartamentoController.cs",
+              "DocumentMoniker": "C:\\Users\\lfebles\\source\\FelipeFebles\\DSW_Dollder_MS\\DSW_ApiNoConformidades-Dollder_MS\\Controllers\\Departamentos\\CRUD_AgregarDepartamentoController.cs",
+              "RelativeDocumentMoniker": "DSW_ApiNoConformidades-Dollder_MS\\Controllers\\Departamentos\\CRUD_AgregarDepartamentoController.cs",
+              "ToolTip": "C:\\Users\\lfebles\\source\\FelipeFebles\\DSW_Dollder_MS\\DSW_ApiNoConformidades-Dollder_MS\\Controllers\\Departamentos\\CRUD_AgregarDepartamentoController.cs",
+              "RelativeToolTip": "DSW_ApiNoConformidades-Dollder_MS\\Controllers\\Departamentos\\CRUD_AgregarDepartamentoController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA1wBkAAABUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T19:18:35.881Z",
+              "WhenOpened": "2025-03-26T18:54:20.328Z",
               "EditorCaption": ""
             }
           ]

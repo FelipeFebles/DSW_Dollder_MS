@@ -1692,6 +1692,41 @@
     ]
   },
   {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Departamentos.CRUD_BuscarDepartamentoController",
+    "Method": "BuscarIdDepartamentos",
+    "RelativePath": "api/CRUD_BuscarDepartamento/BuscarIdDepartamentos",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Data",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Responses.Departamento.DepartamentoResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
     "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Indicador.CRUD_BuscarIndicadoresController",
     "Method": "BuscarIndicadoresCausa",
     "RelativePath": "api/CRUD_BuscarIndicadores/BuscarIndicadoresCausa",

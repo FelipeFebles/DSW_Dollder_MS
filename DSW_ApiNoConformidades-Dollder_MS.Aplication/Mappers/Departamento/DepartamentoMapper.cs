@@ -12,6 +12,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Mappers.Departamento
             {
                 nombre = request.nombre,
                 cargo = request.cargo,
+                estado = request.estado
             };
             return entity;
         }

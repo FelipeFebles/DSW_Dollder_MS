@@ -11,7 +11,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Responses.Departamento
         public string? UpdatedBy { get; set; }
         public Guid? usuarioId { get; set; }
 
-
+        public bool? estado { get; set; }
         public string? nombreDepartamento { get; set; }
         public string? cargo { get; set; }
 
