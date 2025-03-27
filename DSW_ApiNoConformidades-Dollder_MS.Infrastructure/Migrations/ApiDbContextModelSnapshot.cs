@@ -860,6 +860,13 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Infrastructure.Migrations
                     b.HasDiscriminator().HasValue("OperarioEntity");
                 });
 
+            modelBuilder.Entity("DSW_ApiNoConformidades_Dollder_MS.Core.Entities.Child.Usuario.RegenciaEntity", b =>
+                {
+                    b.HasBaseType("DSW_ApiNoConformidades_Dollder_MS.Core.Entities.UsuarioEntity");
+
+                    b.HasDiscriminator().HasValue("RegenciaEntity");
+                });
+
             modelBuilder.Entity("DSW_ApiNoConformidades_Dollder_MS.Core.Entities.AccionesEntity", b =>
                 {
                     b.HasOne("DSW_ApiNoConformidades_Dollder_MS.Core.Entities.ResponsableEntity", "responsable")

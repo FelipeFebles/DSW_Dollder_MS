@@ -40,6 +40,8 @@ public class ApiDbContext : DbContext , IApiDbContext
     public DbSet<RevisionReporteEntity> RevisionReporte { get; set; }
     public DbSet<SeguimientoEntity> Seguimiento {  get; set; }
     public DbSet<UsuarioEntity> Usuario { get; set; }
+    public DbSet<RegenciaEntity> Regencia { get; set; }
+
     public DbSet<VerificacionEfectividadEntity> VerificacionEfectividad { get; set; }
 
 

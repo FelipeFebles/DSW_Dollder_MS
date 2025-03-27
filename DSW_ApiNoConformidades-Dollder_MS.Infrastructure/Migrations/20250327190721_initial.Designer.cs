@@ -13,7 +13,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace DSW_ApiNoConformidades_Dollder_MS.Infrastructure.Migrations
 {
     [DbContext(typeof(ApiDbContext))]
-    [Migration("20250320134501_initial")]
+    [Migration("20250327190721_initial")]
     partial class initial
     {
         /// <inheritdoc />
@@ -861,6 +861,13 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Infrastructure.Migrations
                     b.HasBaseType("DSW_ApiNoConformidades_Dollder_MS.Core.Entities.UsuarioEntity");
 
                     b.HasDiscriminator().HasValue("OperarioEntity");
+                });
+
+            modelBuilder.Entity("DSW_ApiNoConformidades_Dollder_MS.Core.Entities.Child.Usuario.RegenciaEntity", b =>
+                {
+                    b.HasBaseType("DSW_ApiNoConformidades_Dollder_MS.Core.Entities.UsuarioEntity");
+
+                    b.HasDiscriminator().HasValue("RegenciaEntity");
                 });
 
             modelBuilder.Entity("DSW_ApiNoConformidades_Dollder_MS.Core.Entities.AccionesEntity", b =>

@@ -9,7 +9,10 @@ using DSW_ApiNoConformidades_Dollder_MS.Application.Responses.Reportes;
 using DSW_ApiNoConformidades_Dollder_MS.Application.Responses.Usuarios;
 using DSW_ApiNoConformidades_Dollder_MS.Core.Entities;
 using DSW_ApiNoConformidades_Dollder_MS.Infrastructure.Database;
+using DSW_ApiNoConformidades_Dollder_MS.Infrastructure.Servicio;
 using MediatR;
+using Microsoft.Azure.Amqp.Transaction;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 
 namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Commands.Reportes
@@ -108,6 +111,9 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Commands.Report
                 await _dbContext.SaveEfContextChanges("APP");
                 transaccion.Commit();
 
+                var correo = new Correo();
+                correo.EnviaCorreoUsuario(gerente.correo, "Nuevo reporte", "Se ha generado un nuevo reporte en el area " + request._request.area + " con el titulo " + request._request.titulo);
+
 
                 return new IdReporteResponse(reporte.Id);
             }
@@ -120,10 +126,35 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Commands.Report
         }
 
 
-        public UsuarioResponse BuscarRevisor(UsuarioEntity dep_usuario) 
+        public UsuarioResponse BuscarRevisor(UsuarioEntity dep_usuario)
         {
+            var regente = _dbContext.Usuario
+                                        .Where(u => u.departamento.nombre == dep_usuario.departamento.nombre && u.departamento.cargo.Contains("Regente"))
+                                        .Select(u => new UsuarioResponse
+                                        {
+                                            Id = u.Id,
+                                            correo = u.correo,
+                                            nombre = u.nombre,
+                                            apellido = u.apellido,
+                                        }).FirstOrDefault();
+            if(regente != null)
+            {
+                return regente;
+            }
 
-            var gerente = _dbContext.Usuario
+            var direccion = _dbContext.Usuario
+                                        .Where(u => u.departamento.nombre == dep_usuario.departamento.nombre && u.departamento.cargo.Contains("Director de planta"))
+                                        .Select(u => new UsuarioResponse
+                                        {
+                                            Id = u.Id,
+                                            correo = u.correo,
+                                            nombre = u.nombre,
+                                            apellido = u.apellido,
+                                        }).FirstOrDefault();
+
+            if (direccion == null)
+            {
+                var gerente = _dbContext.Usuario
                                         .Where(u => u.departamento.nombre == dep_usuario.departamento.nombre && u.departamento.cargo.Contains("Gerente"))
                                         .Select(u => new UsuarioResponse
                                         {
@@ -133,21 +164,10 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Commands.Report
                                             apellido = u.apellido,
                                         }).FirstOrDefault();
 
-            if (gerente == null)
-            {
-                var jefe = _dbContext.Usuario
-                                        .Where(u => u.departamento.nombre == dep_usuario.departamento.nombre && u.departamento.cargo.Contains("Jefe"))
-                                        .Select(u => new UsuarioResponse
-                                        {
-                                            Id = u.Id,
-                                            correo = u.correo,
-                                            nombre = u.nombre,
-                                            apellido = u.apellido,
-                                        }).FirstOrDefault();
-                if (jefe == null)
+                if (gerente == null)
                 {
-                    var coordinador = _dbContext.Usuario
-                                            .Where(u => u.departamento.nombre == dep_usuario.departamento.nombre && u.departamento.cargo.Contains("Coordinador"))
+                    var jefe = _dbContext.Usuario
+                                            .Where(u => u.departamento.nombre == dep_usuario.departamento.nombre && u.departamento.cargo.Contains("Jefe"))
                                             .Select(u => new UsuarioResponse
                                             {
                                                 Id = u.Id,
@@ -155,16 +175,27 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Commands.Report
                                                 nombre = u.nombre,
                                                 apellido = u.apellido,
                                             }).FirstOrDefault();
+                    if (jefe == null)
+                    {
+                        var coordinador = _dbContext.Usuario
+                                                .Where(u => u.departamento.nombre == dep_usuario.departamento.nombre && u.departamento.cargo.Contains("Coordinador"))
+                                                .Select(u => new UsuarioResponse
+                                                {
+                                                    Id = u.Id,
+                                                    correo = u.correo,
+                                                    nombre = u.nombre,
+                                                    apellido = u.apellido,
+                                                }).FirstOrDefault();
 
-                    return coordinador;
+                        return coordinador;
+                    }
+
+                    return jefe;
                 }
-
-                return jefe;
+                return gerente;          
             }
-
-            return gerente;
+            return direccion;
         }
-
     }
 
 }

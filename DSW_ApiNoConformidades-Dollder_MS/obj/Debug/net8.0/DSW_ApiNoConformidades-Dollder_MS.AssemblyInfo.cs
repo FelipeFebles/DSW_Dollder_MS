@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DSW_ApiNoConformidades-Dollder_MS")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9d3781c36a3011ba1d6529fe31e8964d99ad2a93")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec52ec3fbfe5157a4df84be6401f939ef96add4f")]
 [assembly: System.Reflection.AssemblyProductAttribute("DSW_ApiNoConformidades-Dollder_MS")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DSW_ApiNoConformidades-Dollder_MS")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

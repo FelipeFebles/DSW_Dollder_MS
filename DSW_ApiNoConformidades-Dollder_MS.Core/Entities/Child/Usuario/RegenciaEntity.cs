@@ -1,6 +1,6 @@
 ﻿namespace DSW_ApiNoConformidades_Dollder_MS.Core.Entities.Child.Usuario
 {
-    public class Regencia : UsuarioEntity
+    public class RegenciaEntity : UsuarioEntity
     {
     }
 }

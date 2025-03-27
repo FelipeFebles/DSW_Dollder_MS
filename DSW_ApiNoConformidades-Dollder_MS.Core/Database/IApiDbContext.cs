@@ -36,6 +36,9 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Core.Database
         public DbSet<UsuarioEntity> Usuario { get; set; }
         public DbSet<VerificacionEfectividadEntity> VerificacionEfectividad { get; set; }
 
+
+        public DbSet<RegenciaEntity> Regencia { get; set; }
+
         DbContext DbContext
         {
             get;

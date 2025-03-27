@@ -7,7 +7,7 @@
         public string? CreatedBy { get; set; }
         public DateTime? UpdatedAt { get; set; }
         public string? UpdatedBy { get; set; }
-        public bool? estado { get; set; }
+        public bool? estado { get; set; } = false;
 
     }
 }
