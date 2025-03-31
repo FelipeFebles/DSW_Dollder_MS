@@ -42,7 +42,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Queries.Reporte
         {
             try
             {
-                var list = _dbContext.RevisionReporte.Where(c => c.usuario_Id == request._request.id_usuario    &&    c.reporte_Id == request._request.id_reporte).Select(c => new RevisionReporteResponse
+                var list = _dbContext.RevisionReporte.Where(c => c.usuario_Id == request._request.id_usuario    &&    c.reporte_Id == request._request.id_reporte ).Select(c => new RevisionReporteResponse
                 {
                     Id = c.Id,
                     id_reporte = c.Id,

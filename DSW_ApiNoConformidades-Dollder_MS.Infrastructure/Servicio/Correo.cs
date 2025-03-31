@@ -9,8 +9,8 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Infrastructure.Servicio
 
 
         private SmtpClient cliente = new SmtpClient("smtp.gmail.com", 587); //Cambiar a los valores de Gmail
-        private string correo = "luisfelipefeblescastro@gmail.com";
-        private string clave = "vmwo laeh ozei xoot";
+        private string correo = "noconformidad.dollder@gmail.com";
+        private string clave = "npkg cguq wcjo msdr";
 
         /// <summary>
         /// Envía un correo electrónico al destinatario especificado con el asunto y cuerpo del mensaje especificados.

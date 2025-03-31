@@ -5,6 +5,7 @@ using DSW_ApiNoConformidades_Dollder_MS.Application.Mappers.R_Acciones_Usuario;
 using DSW_ApiNoConformidades_Dollder_MS.Application.Requests.Notificacion;
 using DSW_ApiNoConformidades_Dollder_MS.Application.Responses.Acciones;
 using DSW_ApiNoConformidades_Dollder_MS.Infrastructure.Database;
+using DSW_ApiNoConformidades_Dollder_MS.Infrastructure.Servicio;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
@@ -14,6 +15,8 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Commands.Accion
     {
         private readonly ApiDbContext _dbContext;
         private readonly ILogger<AgregarAccionesHandler> _logger;
+        private readonly Correo correo = new Correo();
+
         public AgregarAccionesHandler(ApiDbContext dbContext, ILogger<AgregarAccionesHandler> logger)
         {
             _dbContext = dbContext;
@@ -61,9 +64,13 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Commands.Accion
                 var responsable = _dbContext.Responsable.Where(r => r.Id == request._request.responsable_Id).FirstOrDefault();
                 var envia = _dbContext.Usuario.Where(u => u.Id == responsable.usuario_Id).FirstOrDefault();
 
-                var notificacion = NotificacionMapper.MapRequestNotificacionEntity(new NotificacionRequest("Accion correctiva generada", envia.nombre + " " + envia.apellido, usuario.correo, "Se ha asignado una Accion", false, "Acciones" ));
+                var notificacion = NotificacionMapper.MapRequestNotificacionEntity(new NotificacionRequest("Accion correctiva/preventiva generada", envia.nombre + " " + envia.apellido, usuario.correo, "Se ha asignado una Accion", false, "Acciones" ));
                 _dbContext.Notificacion.Add(notificacion);
                 await _dbContext.SaveEfContextChanges("APP");
+
+
+                correo.EnviaCorreoUsuario(usuario.correo, "Accion correctiva/preventiva generada", "Se ha asignado una Accion");
+
 
                 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                 ///     Crear una instancia de Responsable con los datos del request

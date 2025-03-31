@@ -6,6 +6,7 @@ using DSW_ApiNoConformidades_Dollder_MS.Application.Requests.NoConformidad;
 using DSW_ApiNoConformidades_Dollder_MS.Application.Requests.Notificacion;
 using DSW_ApiNoConformidades_Dollder_MS.Application.Responses.Responsable;
 using DSW_ApiNoConformidades_Dollder_MS.Infrastructure.Database;
+using DSW_ApiNoConformidades_Dollder_MS.Infrastructure.Servicio;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
@@ -16,6 +17,8 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Commands.Respon
         private readonly ApiDbContext _dbContext;
         private readonly ILogger<AgregarResponsableHandler> _logger;
         private readonly MediatR.IMediator _mediator;
+        private readonly Correo correo = new Correo();
+
         public AgregarResponsableHandler(ApiDbContext dbContext, ILogger<AgregarResponsableHandler> logger, MediatR.IMediator mediator)
         {
             _dbContext = dbContext;
@@ -68,10 +71,13 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Commands.Respon
 
                 var reporte = _dbContext.Reporte.Where(r => r.Id == noConformidad.reporte_Id).FirstOrDefault();
 
-                var notificacion = NotificacionMapper.MapRequestNotificacionEntity(new NotificacionRequest(reporte.titulo, "Garantia de calidad", usuario.correo, "Se ha diferido una no conformidad a su departamento", false, "RESPONSABLE"));
+                var notificacion = NotificacionMapper.MapRequestNotificacionEntity(new NotificacionRequest(reporte.titulo, "Garantia de calidad", usuario.correo, "Se ha diferido una no conformidad a su departamento", false, "Responsables"));
                 _dbContext.Notificacion.Add(notificacion);
                 await _dbContext.SaveEfContextChanges("APP");
                 transaccion.Commit();
+
+                correo.EnviaCorreoUsuario(usuario.correo, "Garantia de calidad", "Se ha diferido una no conformidad a su departamento");
+
 
 
 

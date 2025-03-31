@@ -21,6 +21,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Commands.Report
     {
         private readonly ApiDbContext _dbContext;
         private readonly ILogger<AgregarReporteHandler> _logger;
+        private readonly Correo correo = new Correo();
         public AgregarReporteHandler(ApiDbContext dbContext, ILogger<AgregarReporteHandler> logger)
         {
             _dbContext = dbContext;
@@ -111,7 +112,6 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Commands.Report
                 await _dbContext.SaveEfContextChanges("APP");
                 transaccion.Commit();
 
-                var correo = new Correo();
                 correo.EnviaCorreoUsuario(gerente.correo, "Nuevo reporte", "Se ha generado un nuevo reporte en el area " + request._request.area + " con el titulo " + request._request.titulo);
 
 
@@ -129,7 +129,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Commands.Report
         public UsuarioResponse BuscarRevisor(UsuarioEntity dep_usuario)
         {
             var regente = _dbContext.Usuario
-                                        .Where(u => u.departamento.nombre == dep_usuario.departamento.nombre && u.departamento.cargo.Contains("Regente"))
+                                        .Where(u =>u.estado==true && u.departamento.nombre == dep_usuario.departamento.nombre && u.departamento.cargo.Contains("Regente"))
                                         .Select(u => new UsuarioResponse
                                         {
                                             Id = u.Id,
@@ -143,7 +143,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Commands.Report
             }
 
             var direccion = _dbContext.Usuario
-                                        .Where(u => u.departamento.nombre == dep_usuario.departamento.nombre && u.departamento.cargo.Contains("Director de planta"))
+                                        .Where(u => u.estado == true && u.departamento.nombre == dep_usuario.departamento.nombre && u.departamento.cargo.Contains("Director de planta"))
                                         .Select(u => new UsuarioResponse
                                         {
                                             Id = u.Id,
@@ -155,7 +155,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Commands.Report
             if (direccion == null)
             {
                 var gerente = _dbContext.Usuario
-                                        .Where(u => u.departamento.nombre == dep_usuario.departamento.nombre && u.departamento.cargo.Contains("Gerente"))
+                                        .Where(u => u.estado == true && u.departamento.nombre == dep_usuario.departamento.nombre && u.departamento.cargo.Contains("Gerente"))
                                         .Select(u => new UsuarioResponse
                                         {
                                             Id = u.Id,
@@ -167,7 +167,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Commands.Report
                 if (gerente == null)
                 {
                     var jefe = _dbContext.Usuario
-                                            .Where(u => u.departamento.nombre == dep_usuario.departamento.nombre && u.departamento.cargo.Contains("Jefe"))
+                                            .Where(u => u.estado == true && u.departamento.nombre == dep_usuario.departamento.nombre && u.departamento.cargo.Contains("Jefe"))
                                             .Select(u => new UsuarioResponse
                                             {
                                                 Id = u.Id,
@@ -178,7 +178,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Commands.Report
                     if (jefe == null)
                     {
                         var coordinador = _dbContext.Usuario
-                                                .Where(u => u.departamento.nombre == dep_usuario.departamento.nombre && u.departamento.cargo.Contains("Coordinador"))
+                                                .Where(u => u.estado == true && u.departamento.nombre == dep_usuario.departamento.nombre && u.departamento.cargo.Contains("Coordinador"))
                                                 .Select(u => new UsuarioResponse
                                                 {
                                                     Id = u.Id,

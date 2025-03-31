@@ -5,9 +5,15 @@ using DSW_ApiNoConformidades_Dollder_MS.Application.Requests.Responsables;
 
 namespace DSW_ApiNoConformidades_Dollder_MS.Application.Requests.NoConformidad
 {
-    public class NoConformidadRequest : BaseRequest
+    public class NoConformidadRequest 
     {
-        
+        public Guid? Id { get; set; }
+        public DateTime? CreatedAt { get; set; }
+        public string? CreatedBy { get; set; }
+        public DateTime? UpdatedAt { get; set; }
+        public string? UpdatedBy { get; set; }
+
+
         public string? revisado_por { get; set; }                // Revisado por
         public string? consecuencias { get; set; }               // Consecuencias del reporte
         public List<string>? responsables_cargo { get; set; } = new List<string>();       // Responsables

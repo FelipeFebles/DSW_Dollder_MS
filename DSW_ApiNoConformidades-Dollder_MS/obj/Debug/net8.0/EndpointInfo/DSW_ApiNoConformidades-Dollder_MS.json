@@ -1,9 +1,8 @@
 {
-  "openapi": "3.0.1",
+  "openapi": "3.0.4",
   "info": {
-    "title": "API de Prueba",
-    "description": "Documentación de la API",
-    "version": "v1"
+    "title": "DSW_ApiNoConformidades-Dollder_MS",
+    "version": "1.0"
   },
   "paths": {
     "/api/CRUD_Actualizar_Acciones/Actualizar_Acciones": {
@@ -1434,6 +1433,142 @@
         }
       }
     },
+    "/api/CRUD_Buscar_Acciones/Buscar_AccionesPreventivas": {
+      "get": {
+        "tags": [
+          "CRUD_Buscar_Acciones"
+        ],
+        "parameters": [
+          {
+            "name": "data",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AccionesResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AccionesResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AccionesResponse"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/CRUD_Buscar_Acciones/Buscar_AccionesCorrectivas": {
+      "get": {
+        "tags": [
+          "CRUD_Buscar_Acciones"
+        ],
+        "parameters": [
+          {
+            "name": "data",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AccionesResponse"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AccionesResponse"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AccionesResponse"
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/CRUD_Buscar_NoConformidad/BuscarTodasNoConformidades": {
       "get": {
         "tags": [
@@ -1875,6 +2010,44 @@
             }
           },
           {
+            "name": "noConformidad.Id",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          },
+          {
+            "name": "noConformidad.CreatedAt",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "noConformidad.CreatedBy",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "noConformidad.UpdatedAt",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "date-time"
+            }
+          },
+          {
+            "name": "noConformidad.UpdatedBy",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
             "name": "noConformidad.revisado_por",
             "in": "query",
             "schema": {
@@ -2038,6 +2211,13 @@
             }
           },
           {
+            "name": "noConformidad.cierre.indicadores.origen.estado",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
             "name": "noConformidad.cierre.indicadores.causa",
             "in": "query",
             "schema": {
@@ -2099,6 +2279,13 @@
             "in": "query",
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "noConformidad.cierre.indicadores.estado",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
             }
           },
           {
@@ -2169,6 +2356,13 @@
             }
           },
           {
+            "name": "noConformidad.cierre.verificacionEfectividad.estado",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
             "name": "noConformidad.cierre.Id",
             "in": "query",
             "schema": {
@@ -2207,6 +2401,13 @@
             }
           },
           {
+            "name": "noConformidad.cierre.estado",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
+            }
+          },
+          {
             "name": "noConformidad.seguimientos",
             "in": "query",
             "schema": {
@@ -2214,44 +2415,6 @@
               "items": {
                 "$ref": "#/components/schemas/SeguimientoRequest"
               }
-            }
-          },
-          {
-            "name": "noConformidad.Id",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "format": "uuid"
-            }
-          },
-          {
-            "name": "noConformidad.CreatedAt",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "format": "date-time"
-            }
-          },
-          {
-            "name": "noConformidad.CreatedBy",
-            "in": "query",
-            "schema": {
-              "type": "string"
-            }
-          },
-          {
-            "name": "noConformidad.UpdatedAt",
-            "in": "query",
-            "schema": {
-              "type": "string",
-              "format": "date-time"
-            }
-          },
-          {
-            "name": "noConformidad.UpdatedBy",
-            "in": "query",
-            "schema": {
-              "type": "string"
             }
           },
           {
@@ -2313,6 +2476,13 @@
             "in": "query",
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "revisionReporte.estado",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
             }
           },
           {
@@ -2463,6 +2633,13 @@
             "in": "query",
             "schema": {
               "type": "string"
+            }
+          },
+          {
+            "name": "estado",
+            "in": "query",
+            "schema": {
+              "type": "boolean"
             }
           }
         ],
@@ -2970,6 +3147,65 @@
         }
       }
     },
+    "/api/CRUD_BuscarDepartamento/BuscarIdDepartamentos": {
+      "get": {
+        "tags": [
+          "CRUD_BuscarDepartamento"
+        ],
+        "parameters": [
+          {
+            "name": "Data",
+            "in": "query",
+            "schema": {
+              "type": "string",
+              "format": "uuid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/DepartamentoResponse"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DepartamentoResponse"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/DepartamentoResponse"
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/CRUD_BuscarDepartamento/BuscarDepartamentos": {
       "get": {
         "tags": [
@@ -3347,6 +3583,10 @@
             "type": "string",
             "nullable": true
           },
+          "estado": {
+            "type": "boolean",
+            "nullable": true
+          },
           "conforme": {
             "type": "boolean",
             "nullable": true
@@ -3401,6 +3641,10 @@
           },
           "updatedBy": {
             "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "boolean",
             "nullable": true
           },
           "conforme": {
@@ -3459,6 +3703,10 @@
             "type": "string",
             "nullable": true
           },
+          "estado": {
+            "type": "boolean",
+            "nullable": true
+          },
           "nombre": {
             "type": "string",
             "nullable": true
@@ -3499,6 +3747,10 @@
           "usuarioId": {
             "type": "string",
             "format": "uuid",
+            "nullable": true
+          },
+          "estado": {
+            "type": "boolean",
             "nullable": true
           },
           "nombreDepartamento": {
@@ -3666,6 +3918,10 @@
             "type": "string",
             "nullable": true
           },
+          "estado": {
+            "type": "boolean",
+            "nullable": true
+          },
           "imagen": {
             "type": "string",
             "format": "byte",
@@ -3707,6 +3963,10 @@
           },
           "updatedBy": {
             "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "boolean",
             "nullable": true
           },
           "imagen": {
@@ -3752,6 +4012,10 @@
             "type": "string",
             "nullable": true
           },
+          "estado": {
+            "type": "boolean",
+            "nullable": true
+          },
           "causa": {
             "type": "string",
             "nullable": true
@@ -3783,6 +4047,10 @@
           },
           "updatedBy": {
             "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "boolean",
             "nullable": true
           },
           "causa": {
@@ -3823,6 +4091,10 @@
             "type": "string",
             "nullable": true
           },
+          "estado": {
+            "type": "boolean",
+            "nullable": true
+          },
           "origen": {
             "type": "string",
             "nullable": true
@@ -3861,6 +4133,10 @@
             "type": "string",
             "nullable": true
           },
+          "estado": {
+            "type": "boolean",
+            "nullable": true
+          },
           "origen": {
             "type": "string",
             "nullable": true
@@ -3897,6 +4173,10 @@
           },
           "updatedBy": {
             "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "boolean",
             "nullable": true
           },
           "origen": {
@@ -3946,6 +4226,10 @@
           },
           "updatedBy": {
             "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "boolean",
             "nullable": true
           },
           "origen": {
@@ -4083,6 +4367,10 @@
             "type": "string",
             "nullable": true
           },
+          "estado": {
+            "type": "string",
+            "nullable": true
+          },
           "numero_expedicion": {
             "type": "string",
             "nullable": true
@@ -4112,10 +4400,6 @@
           "prioridad": {
             "type": "integer",
             "format": "int32",
-            "nullable": true
-          },
-          "estado": {
-            "type": "string",
             "nullable": true
           },
           "titulo": {
@@ -4175,6 +4459,10 @@
           },
           "updatedBy": {
             "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "boolean",
             "nullable": true
           },
           "titulo": {
@@ -4403,6 +4691,10 @@
             "type": "string",
             "nullable": true
           },
+          "estado": {
+            "type": "boolean",
+            "nullable": true
+          },
           "investigacion": {
             "type": "string",
             "nullable": true
@@ -4482,6 +4774,10 @@
           },
           "updatedBy": {
             "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "boolean",
             "nullable": true
           },
           "investigacion": {
@@ -4565,6 +4861,10 @@
             "type": "string",
             "nullable": true
           },
+          "estado": {
+            "type": "boolean",
+            "nullable": true
+          },
           "nombre": {
             "type": "string",
             "nullable": true
@@ -4608,6 +4908,10 @@
             "type": "string",
             "nullable": true
           },
+          "estado": {
+            "type": "boolean",
+            "nullable": true
+          },
           "nombre": {
             "type": "string",
             "nullable": true
@@ -4649,6 +4953,10 @@
           },
           "updatedBy": {
             "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "boolean",
             "nullable": true
           },
           "fecha_seguimiento": {
@@ -4699,6 +5007,10 @@
           },
           "updatedBy": {
             "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "boolean",
             "nullable": true
           },
           "fecha_seguimiento": {
@@ -4963,6 +5275,10 @@
             "type": "string",
             "nullable": true
           },
+          "estado": {
+            "type": "boolean",
+            "nullable": true
+          },
           "efectiva": {
             "type": "boolean",
             "nullable": true
@@ -5007,6 +5323,10 @@
           },
           "updatedBy": {
             "type": "string",
+            "nullable": true
+          },
+          "estado": {
+            "type": "boolean",
             "nullable": true
           },
           "efectiva": {

@@ -5,6 +5,7 @@ using DSW_ApiNoConformidades_Dollder_MS.Application.Mappers.R_Calidad_NoConformi
 using DSW_ApiNoConformidades_Dollder_MS.Application.Requests.Notificacion;
 using DSW_ApiNoConformidades_Dollder_MS.Application.Responses.NoConformidad;
 using DSW_ApiNoConformidades_Dollder_MS.Infrastructure.Database;
+using DSW_ApiNoConformidades_Dollder_MS.Infrastructure.Servicio;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
@@ -14,6 +15,8 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Commands.NoConf
     {
         private readonly ApiDbContext _dbContext;
         private readonly ILogger<AgregarNoConformidadHandler> _logger;
+        private readonly Correo correo = new Correo();
+
         public AgregarNoConformidadHandler(ApiDbContext dbContext, ILogger<AgregarNoConformidadHandler> logger)
         {
             _dbContext = dbContext;
@@ -93,6 +96,9 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Commands.NoConf
                     var notificacion = NotificacionMapper.MapRequestNotificacionEntity(new NotificacionRequest(titulo.titulo, request._request.revisado_por, calidad.correo, "Se ha generado una nueva no conformidad para revisar", false, "NoConformidades"));
                     _dbContext.Notificacion.Add(notificacion);
                     await _dbContext.SaveEfContextChanges("APP");
+
+                    correo.EnviaCorreoUsuario(calidad.correo, "Nueva no Conformidad de título: "+titulo.titulo, "Se ha generado una nueva no conformidad para revisar");
+
                 }
 
 

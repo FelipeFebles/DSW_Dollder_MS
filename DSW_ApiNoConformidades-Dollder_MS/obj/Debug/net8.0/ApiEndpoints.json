@@ -735,6 +735,76 @@
     ]
   },
   {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Acciones.CRUD_Buscar_AccionesController",
+    "Method": "Buscar_AccionesCorrectivas",
+    "RelativePath": "api/CRUD_Buscar_Acciones/Buscar_AccionesCorrectivas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.Acciones.AccionesResponse, DSW_ApiNoConformidades-Dollder_MS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Acciones.CRUD_Buscar_AccionesController",
+    "Method": "Buscar_AccionesPreventivas",
+    "RelativePath": "api/CRUD_Buscar_Acciones/Buscar_AccionesPreventivas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "System.Guid",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.Acciones.AccionesResponse, DSW_ApiNoConformidades-Dollder_MS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
     "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.NoConformidad.CRUD_Buscar_NoConformidadController",
     "Method": "BuscarNoConformidad",
     "RelativePath": "api/CRUD_Buscar_NoConformidad/BuscarNoConformidad",
@@ -914,6 +984,31 @@
       {
         "Name": "id_usuario",
         "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.Id",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.CreatedAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.CreatedBy",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.UpdatedAt",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "noConformidad.UpdatedBy",
+        "Type": "System.String",
         "IsRequired": false
       },
       {
@@ -1154,31 +1249,6 @@
       {
         "Name": "noConformidad.seguimientos",
         "Type": "System.Collections.Generic.List\u00601[[DSW_ApiNoConformidades_Dollder_MS.Aplication.Requests.Seguimiento.SeguimientoRequest, DSW_ApiNoConformidades-Dollder_MS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "noConformidad.Id",
-        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "noConformidad.CreatedAt",
-        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "noConformidad.CreatedBy",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "noConformidad.UpdatedAt",
-        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
-        "IsRequired": false
-      },
-      {
-        "Name": "noConformidad.UpdatedBy",
-        "Type": "System.String",
         "IsRequired": false
       },
       {
