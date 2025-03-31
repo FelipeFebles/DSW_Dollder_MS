@@ -14,7 +14,6 @@ public class UsuarioEntity : BaseEntity
     public string? preguntas_de_seguridad2 { set; get; }
     public string? respuesta_de_seguridad { set; get; }
     public string? respuesta_de_seguridad2 { set; get; }
-    public bool? estado { set; get; }
 
     // Relaciones PK
         // 1..n Reporte

@@ -53,6 +53,9 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Queries.Acciones
                         list.Add(new AccionesResponse
                         {
                             Id = accion.Id,
+                            correctivas_Id = accion.correctiva_Id,
+                            CreatedAt = accion.CreatedAt,
+                            fecha_compromiso = accion.fecha_compromiso,
                             responsable_Id = accion.responsable_Id,
                             investigacion = accion.investigacion,
                             area = accion.area,

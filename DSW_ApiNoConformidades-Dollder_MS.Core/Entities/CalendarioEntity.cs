@@ -6,11 +6,7 @@
         public int? mes { get; set; }
         public int? anio { get; set; }
         public string? titulo { get; set; }
-        public string descripcion { get; set; }
-        public string color { get; set; }
-        public bool? estado { get; set; }
-
-
-
+        public string? descripcion { get; set; }
+        public string? color { get; set; }
     }
 }

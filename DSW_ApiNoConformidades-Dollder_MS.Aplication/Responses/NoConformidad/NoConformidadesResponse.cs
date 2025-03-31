@@ -4,8 +4,14 @@ using DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.Seguimiento;
 
 namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.NoConformidad
 {
-    public class NoConformidadesResponse : BaseResponse
+    public class NoConformidadesResponse
     {
+        public Guid? Id { get; set; }
+        public DateTime? CreatedAt { get; set; }
+        public string? CreatedBy { get; set; }
+        public DateTime? UpdatedAt { get; set; }
+        public string? UpdatedBy { get; set; }
+
         public string? numero_expedicion { get; set; }          // Numero de expedicion de la no conformidad NC-25-001
         public string? revisado_por { get; set; }                // Revisado por
         public string? consecuencias { get; set; }               // Consecuencias del reporte

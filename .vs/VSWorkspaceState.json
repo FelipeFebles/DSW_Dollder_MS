@@ -1,11 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\DSW_ApiNoConformidades-Dollder_MS.Aplication",
-    "\\DSW_ApiNoConformidades-Dollder_MS.Aplication\\Handlers",
-    "\\DSW_ApiNoConformidades-Dollder_MS.Aplication\\Handlers\\Queries",
-    "\\DSW_ApiNoConformidades-Dollder_MS.Aplication\\Handlers\\Queries\\Departamento"
+    ""
   ],
-  "SelectedNode": "\\DSW_ApiNoConformidades-Dollder_MS.Aplication\\Handlers\\Queries\\Departamento\\BuscarDepartamentoHandler.cs",
+  "SelectedNode": "\\DSW_ApiNoConformidades-Dollder_MS.sln",
   "PreviewInSolutionExplorer": false
 }

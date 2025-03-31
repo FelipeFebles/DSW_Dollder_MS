@@ -6,7 +6,6 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Core.Entities
     {
         public string? investigacion { get; set; }     // Acciones correctivas
         public string? area { get; set; }             // Area donde se detecto
-        public bool? estado { get; set; }             // Estado
         public bool? visto_bueno { get; set; }        // Revisado por el responsable
         public string? cargo_usuario { get; set; }      // Cargo del usuario responsable de la accion
         public string? fecha_compromiso { get; set; }      // fecha_compromiso de la actividad

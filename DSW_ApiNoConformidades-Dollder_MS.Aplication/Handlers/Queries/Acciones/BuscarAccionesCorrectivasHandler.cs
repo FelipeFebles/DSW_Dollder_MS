@@ -51,9 +51,12 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Queries.Acciones
                 {
                     var accion = _dbContext.Correctivas.Where(c => c.Id == acciones.acciones_Id).FirstOrDefault();
                     if (accion != null)
+                    {
                         list.Add(new AccionesResponse
                         {
                             Id = accion.Id,
+                            CreatedAt= accion.CreatedAt,
+                            fecha_compromiso = accion.fecha_compromiso,
                             responsable_Id = accion.responsable_Id,
                             investigacion = accion.investigacion,
                             area = accion.area,
@@ -61,6 +64,8 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Queries.Acciones
                             visto_bueno = accion.visto_bueno,
                             cargo_usuario = accion.cargo_usuario
                         });
+                    }
+                        
                 }
 
                 // Retornar la lista de no Acciones Correctivas

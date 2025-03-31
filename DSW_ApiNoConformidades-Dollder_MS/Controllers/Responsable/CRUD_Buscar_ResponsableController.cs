@@ -23,7 +23,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Controllers.Responsable
         [HttpGet("BuscarResponsable")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<List<ResponsableResponse>>> BuscarResponsable([FromBody] BuscarUsuarioIDRequest request)
+        public async Task<ActionResult<List<ResponsableResponse>>> BuscarResponsable([FromQuery] BuscarUsuarioIDRequest request)
         {
             _logger.LogInformation("Entrando al método que consulta los Responsable");
 

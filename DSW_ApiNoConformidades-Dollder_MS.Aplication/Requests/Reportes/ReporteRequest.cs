@@ -11,7 +11,6 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Requests.Reportes
         public string? area { get; set; }                // Área relacionada con el reporte
         public string? titulo { get; set; }              // Título del reporte
         public string? descripcion { get; set; }         // Descripción detallada del reporte
-        public bool? estado { get; set; }                // Estado del reporte
         public string? departamento_emisor { get; set; } // Departamento emisor del reporte
 
         public List<ImagenReporteRequest>? imagenes { get; set; }

@@ -2933,23 +2933,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\luisf\\.nuget\\packages\\": {},
+    "C:\\Users\\lfebles\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\luisf\\source\\repos\\FelipeFebles\\DSW_Dollder_MS\\DSW_ApiNoConformidades-Dollder_MS.Core\\DSW_ApiNoConformidades-Dollder_MS.Core.csproj",
+      "projectUniqueName": "C:\\Users\\lfebles\\source\\FelipeFebles\\DSW_Dollder_MS\\DSW_ApiNoConformidades-Dollder_MS.Core\\DSW_ApiNoConformidades-Dollder_MS.Core.csproj",
       "projectName": "DSW_ApiNoConformidades-Dollder_MS.Core",
-      "projectPath": "C:\\Users\\luisf\\source\\repos\\FelipeFebles\\DSW_Dollder_MS\\DSW_ApiNoConformidades-Dollder_MS.Core\\DSW_ApiNoConformidades-Dollder_MS.Core.csproj",
-      "packagesPath": "C:\\Users\\luisf\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\luisf\\source\\repos\\FelipeFebles\\DSW_Dollder_MS\\DSW_ApiNoConformidades-Dollder_MS.Core\\obj\\",
+      "projectPath": "C:\\Users\\lfebles\\source\\FelipeFebles\\DSW_Dollder_MS\\DSW_ApiNoConformidades-Dollder_MS.Core\\DSW_ApiNoConformidades-Dollder_MS.Core.csproj",
+      "packagesPath": "C:\\Users\\lfebles\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\lfebles\\source\\FelipeFebles\\DSW_Dollder_MS\\DSW_ApiNoConformidades-Dollder_MS.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\luisf\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\lfebles\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

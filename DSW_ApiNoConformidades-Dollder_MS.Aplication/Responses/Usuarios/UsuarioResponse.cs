@@ -16,7 +16,6 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Responses.Usuarios
         public string? preguntas_de_seguridad2 { set; get; }
         public string? respuesta_de_seguridad { set; get; }
         public string? respuesta_de_seguridad2 { set; get; }
-        public bool? estado { set; get; }
         public string? discriminator { set; get; }
         // Nueva propiedad para almacenar información del departamento
         public DepartamentoResponse? departamento { get; set; }

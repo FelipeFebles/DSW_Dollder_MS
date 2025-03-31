@@ -4,7 +4,6 @@
     {
         public string? investigacion { get; set; }     // Acciones correctivas
         public string? area { get; set; }
-        public bool? estado { get; set; }             // Estado
         public bool? visto_bueno { get; set; }        // Revisado por el gerente
         public string? fecha_compromiso { get; set; }      // fecha_compromiso de la actividad
         public string? nombre_usuario { get; set; }           //Lo usare para ver el nombre del usuario

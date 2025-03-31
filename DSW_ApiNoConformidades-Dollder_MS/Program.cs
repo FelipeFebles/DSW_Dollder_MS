@@ -19,7 +19,6 @@ builder.Services.AddCors(options =>
     });
 });
 
-
 // Cadena de conexión para la BD
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Services.AddDbContext<ApiDbContext>(options =>
@@ -34,6 +33,8 @@ builder.Services.AddMediatR(cfg =>
 // Configuración de Swagger/OpenAPI
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+
 // Configuración para permitir transacciones de más de 50 MB (útil para envío de fotos)
 builder.Services.Configure<FormOptions>(options =>
 {
@@ -48,7 +49,7 @@ var app = builder.Build();
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
-    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Prueba de api");
+    c.SwaggerEndpoint("/swagger/v1/swagger.json", "Api");
 });
 
 app.UseCors("PermitirTodo");

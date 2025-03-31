@@ -7,7 +7,6 @@
         public string? titulo { get; set; }              // Título del reporte
         public string? descripcion { get; set; }         // Descripción detallada del reporte
         public string? departamento_emisor { get; set; } // Departamento emisor del reporte
-        public bool? estado { get; set; }                 // Estado del reporte
 
         //Relacion PK 1..1 con Revision 
 

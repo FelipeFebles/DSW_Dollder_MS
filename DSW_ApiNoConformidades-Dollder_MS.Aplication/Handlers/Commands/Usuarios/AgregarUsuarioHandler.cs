@@ -116,20 +116,20 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Commands.Usuari
                     //Retorno ID
                     return new IdUsuarioResponse(entity.Id);
                 }
-                if (departamento.nombre.Contains("Regencia") || departamento.nombre.Contains("Dirección"))
-                {
-                    // Crear una instancia de OperarioEntity con los datos del request
-                    var entity = UsuarioMapper.MapRequestRegenciaEntity(request._request);
+                //if (departamento.nombre.Contains("Regencia") || departamento.nombre.Contains("Dirección"))
+                //{
+                //    // Crear una instancia de OperarioEntity con los datos del request
+                //    var entity = UsuarioMapper.MapRequestRegenciaEntity(request._request);
 
-                    _dbContext.Regencia.Add(entity);
-                    await _dbContext.SaveEfContextChanges("APP");
+                //    _dbContext.Regencia.Add(entity);
+                //    await _dbContext.SaveEfContextChanges("APP");
 
-                    //Doy commit
-                    transaccion.Commit();
+                //    //Doy commit
+                //    transaccion.Commit();
 
-                    //Retorno ID
-                    return new IdUsuarioResponse(entity.Id);
-                }
+                //    //Retorno ID
+                //    return new IdUsuarioResponse(entity.Id);
+                //}
                 else
                 {
 

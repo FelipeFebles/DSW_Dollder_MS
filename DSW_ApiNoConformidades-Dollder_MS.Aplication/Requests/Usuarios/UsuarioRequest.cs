@@ -24,7 +24,6 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Requests.Usuarios
         public string? preguntas_de_seguridad2 { set; get; }
         public string? respuesta_de_seguridad { set; get; }
         public string? respuesta_de_seguridad2 { set; get; }
-        public bool? estado { set; get; }
         public string? nombreDepartamento { get; set; }
         public string? cargoDepartamento { get; set; }
 

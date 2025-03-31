@@ -35,6 +35,41 @@
     ]
   },
   {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Calendario.CRUD_Actualizar_CalendarioController",
+    "Method": "Actualizar_Calendario",
+    "RelativePath": "api/CRUD_Actualizar_Calendario/Actualizar_Calendario",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Aplication.Requests.Calendario.CalendarioRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.Calendario.IdCalendarioResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
     "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.NoConformidad.CRUD_Actualizar_NoConformidadController",
     "Method": "Actualizar_NoConformidad",
     "RelativePath": "api/CRUD_Actualizar_NoConformidad/Actualizar_NoConformidad",
@@ -331,6 +366,41 @@
     "ReturnTypes": [
       {
         "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Responses.Acciones.IdAccionesResponse",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Calendario.CRUD_Agregar_CalendarioController",
+    "Method": "Agregar_Calendario",
+    "RelativePath": "api/CRUD_Agregar_Calendario/Agregar_Calendario",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Aplication.Requests.Calendario.CalendarioRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.Calendario.IdCalendarioResponse",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -805,6 +875,35 @@
     ]
   },
   {
+    "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.Calendario.CRUD_Buscar_CalendarioController",
+    "Method": "Buscar_Calendario",
+    "RelativePath": "api/CRUD_Buscar_Calendario/Buscar_Calendario",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.Calendario.CalendarioResponse, DSW_ApiNoConformidades-Dollder_MS.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
     "ContainingType": "DSW_ApiNoConformidades_Dollder_MS.Controllers.NoConformidad.CRUD_Buscar_NoConformidadController",
     "Method": "BuscarNoConformidad",
     "RelativePath": "api/CRUD_Buscar_NoConformidad/BuscarNoConformidad",
@@ -964,11 +1063,6 @@
       {
         "Name": "descripcion",
         "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "estado",
-        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": false
       },
       {
@@ -1320,6 +1414,11 @@
         "Name": "UpdatedBy",
         "Type": "System.String",
         "IsRequired": false
+      },
+      {
+        "Name": "estado",
+        "Type": "System.Nullable\u00601[[System.Boolean, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [
@@ -1497,9 +1596,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "request",
-        "Type": "DSW_ApiNoConformidades_Dollder_MS.Application.Requests.BuscarUsuarioIDRequest",
-        "IsRequired": true
+        "Name": "data",
+        "Type": "System.Guid",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": [

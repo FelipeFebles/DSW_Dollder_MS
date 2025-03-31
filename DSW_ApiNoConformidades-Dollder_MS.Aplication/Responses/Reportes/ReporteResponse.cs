@@ -13,7 +13,6 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.Reportes
         public string? descripcion { get; set; }         // Descripción detallada del reporte
         public List<ImagenReporteResponse>? imagenes { get; set; } = new List<ImagenReporteResponse>();
 
-        public bool? estado { get; set; }                // Estado del reporte
         public string? departamento_emisor { get; set; } // Departamento emisor del reporte
 
         public string? cambiar { get; set; }

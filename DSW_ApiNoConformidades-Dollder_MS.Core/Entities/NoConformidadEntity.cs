@@ -11,7 +11,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Core.Entities
         public List<string>? responsables_cargo { get; set; }          // Responsables
         public List<string>? areas_involucradas { get; set; }    // Áreas involucradas
         public int? prioridad { get; set; }                      // Prioridad
-        public Estado estado { get; set; }                       // Estado es un enumerado de la carpera Core>Enum
+        public Estado? estado { get; set; }                       // Estado es un enumerado de la carpera Core>Enum
 
         //Relaciones PK
             // 1..* seguimiento

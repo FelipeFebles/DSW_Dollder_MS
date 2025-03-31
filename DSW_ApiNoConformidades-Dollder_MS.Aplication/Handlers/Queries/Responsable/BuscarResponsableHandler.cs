@@ -48,6 +48,8 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Queries.Responsa
                 var list = _dbContext.Responsable.Where(c => c.usuario_Id == request._request.data).Select(c => new ResponsableResponse
                 {
                     Id = c.Id,
+                    CreatedAt= c.CreatedAt,
+                    estado = c.estado,
                     investigacion = c.investigacion,
                     analisis_causa = c.analisis_causa,
                     correccion = c.correccion,
