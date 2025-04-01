@@ -60,7 +60,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Queries.NoConfor
                         titulo = x.reporte.titulo,
                         area = x.reporte.area,
                         estado = ((Estado)x.estado).ToString() ?? "Sin estado", // Conversión directa
-                    })
+                    }).OrderBy(x=> x.numero_expedicion)
                     .ToList();
 
 

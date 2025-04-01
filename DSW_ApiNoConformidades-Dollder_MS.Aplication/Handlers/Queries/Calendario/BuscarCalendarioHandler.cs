@@ -53,6 +53,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Queries.Calendar
                         CreatedBy = x.CreatedBy,
                         UpdatedAt = x.UpdatedAt,
                         UpdatedBy = x.UpdatedBy,
+                        color = x.color,
                         dia = x.dia,
                         mes = x.mes,
                         anio = x.anio,
