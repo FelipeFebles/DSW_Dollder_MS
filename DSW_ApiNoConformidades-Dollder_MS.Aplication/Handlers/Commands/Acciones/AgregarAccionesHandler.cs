@@ -50,7 +50,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Commands.Accion
             try
             {
                 request._request.estado = false;
-
+                request._request.visto_bueno = false;
 
                 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                 ///     Genero la notificacion
@@ -64,7 +64,10 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Commands.Accion
                 var responsable = _dbContext.Responsable.Where(r => r.Id == request._request.responsable_Id).FirstOrDefault();
                 var envia = _dbContext.Usuario.Where(u => u.Id == responsable.usuario_Id).FirstOrDefault();
 
-                var notificacion = NotificacionMapper.MapRequestNotificacionEntity(new NotificacionRequest("Accion correctiva/preventiva generada", envia.nombre + " " + envia.apellido, usuario.correo, "Se ha asignado una Accion", false, "Acciones" ));
+                var nc = _dbContext.NoConformidad.Where(n=> n.Id == responsable.noConformidad_Id).FirstOrDefault();
+
+
+                var notificacion = NotificacionMapper.MapRequestNotificacionEntity(new NotificacionRequest("Accion correctiva/preventiva generada", envia.nombre + " " + envia.apellido, usuario.correo, "Se ha asignado una Accion de la no conformidad: "+ nc.numero_expedicion, false, "Acciones" ));
                 _dbContext.Notificacion.Add(notificacion);
                 await _dbContext.SaveEfContextChanges("APP");
 

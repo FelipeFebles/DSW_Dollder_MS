@@ -53,6 +53,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Commands.Respon
             var transaccion = _dbContext.BeginTransaction();
             try
             {
+                request._request.estado = false;
                 // Crear una instancia de Responsable con los datos del request
                 var usuario = _dbContext.Usuario.Where(c => c.Id == request._request.usuario_Id).FirstOrDefault();
                 var departamento = _dbContext.Departamento.Where(c=> c.Id == usuario.departamento_Id).FirstOrDefault();
@@ -71,7 +72,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Commands.Respon
 
                 var reporte = _dbContext.Reporte.Where(r => r.Id == noConformidad.reporte_Id).FirstOrDefault();
 
-                var notificacion = NotificacionMapper.MapRequestNotificacionEntity(new NotificacionRequest(reporte.titulo, "Garantia de calidad", usuario.correo, "Se ha diferido una no conformidad a su departamento", false, "Responsables"));
+                var notificacion = NotificacionMapper.MapRequestNotificacionEntity(new NotificacionRequest(reporte.titulo, "Garantia de calidad", usuario.correo, "Se ha diferido la conformidad: " + noConformidad.numero_expedicion+" a su departamento", false, "Responsables"));
                 _dbContext.Notificacion.Add(notificacion);
                 await _dbContext.SaveEfContextChanges("APP");
                 transaccion.Commit();

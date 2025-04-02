@@ -1,6 +1,8 @@
 ﻿using DSW_ApiNoConformidades_Dollder_MS.Aplication.Commands.Seguimiento;
 using DSW_ApiNoConformidades_Dollder_MS.Aplication.Mappers.Calendario;
 using DSW_ApiNoConformidades_Dollder_MS.Aplication.Mappers.Seguimiento;
+using DSW_ApiNoConformidades_Dollder_MS.Aplication.Queries.NoConformidades;
+using DSW_ApiNoConformidades_Dollder_MS.Aplication.Requests.NoConformidad;
 using DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.Seguimiento;
 using DSW_ApiNoConformidades_Dollder_MS.Infrastructure.Database;
 using MediatR;
@@ -12,10 +14,13 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Commands.Seguimi
     {
         private readonly ApiDbContext _dbContext;
         private readonly ILogger<AgregarSeguimientoHandler> _logger;
-        public AgregarSeguimientoHandler(ApiDbContext dbContext, ILogger<AgregarSeguimientoHandler> logger)
+        private readonly MediatR.IMediator _mediator;
+
+        public AgregarSeguimientoHandler(ApiDbContext dbContext, ILogger<AgregarSeguimientoHandler> logger, MediatR.IMediator mediator)
         {
             _dbContext = dbContext;
             _logger = logger;
+            _mediator = mediator;
         }
 
         public Task<IdSeguimientoReponse> Handle(AgregarSeguimientoCommand request, CancellationToken cancellationToken)
@@ -45,6 +50,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Commands.Seguimi
             var transaccion = _dbContext.BeginTransaction();
             try
             {
+                request._request.estado = false;
                 // Crear una instancia de Responsable con los datos del request
                 var entity = SeguimientoMapper.MapRequestSeguimientoEntity(request._request);
 
@@ -54,7 +60,10 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Commands.Seguimi
 
 
                 //Agrego la notificacion del calendario
-                var calendario = CalendarioMapper.MapCalendarioEntity(request._request.fecha_seguimiento);
+                var query = new BuscarNoConformidadCompletaQuery(new IdNoConformidadRequest { Data = entity.Id });
+                var response = await _mediator.Send(query);
+
+                var calendario = CalendarioMapper.MapCalendarioEntity(request._request.fecha_seguimiento, "Se ha agregado un seguimiento de la no conformidad: "+ response.noConformidad.numero_expedicion);
 
                 _dbContext.Calendario.Add(calendario);
                 await _dbContext.SaveEfContextChanges("APP");

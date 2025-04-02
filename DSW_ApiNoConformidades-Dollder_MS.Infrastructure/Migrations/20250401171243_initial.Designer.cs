@@ -13,7 +13,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace DSW_ApiNoConformidades_Dollder_MS.Infrastructure.Migrations
 {
     [DbContext(typeof(ApiDbContext))]
-    [Migration("20250327190721_initial")]
+    [Migration("20250401171243_initial")]
     partial class initial
     {
         /// <inheritdoc />
@@ -21,7 +21,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Infrastructure.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "9.0.2")
+                .HasAnnotation("ProductVersion", "9.0.3")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
@@ -103,11 +103,9 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Infrastructure.Migrations
                         .HasColumnType("integer");
 
                     b.Property<string>("color")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<string>("descripcion")
-                        .IsRequired()
                         .HasColumnType("text");
 
                     b.Property<int?>("dia")
@@ -357,7 +355,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Infrastructure.Migrations
                     b.Property<string>("consecuencias")
                         .HasColumnType("text");
 
-                    b.Property<int>("estado")
+                    b.Property<int?>("estado")
                         .HasColumnType("integer");
 
                     b.Property<string>("numero_expedicion")

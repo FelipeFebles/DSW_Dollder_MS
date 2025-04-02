@@ -281,6 +281,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Queries.NoConfor
                         UpdatedBy = cierre.UpdatedBy,
                         estado= cierre.estado,
 
+                        
                         conforme = cierre.conforme,
                         observaciones = cierre.observaciones,
                         responsable = cierre.responsable,

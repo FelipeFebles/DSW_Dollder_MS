@@ -48,7 +48,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Queries.Usuario
 
 
                 // Realizar una consulta que una Usuario y Departamento
-                var usuariosConDepartamento = _dbContext.Usuario
+                var usuariosConDepartamento = _dbContext.Usuario.Where(c=> c.estado == true && c.departamento.estado == true)
                                 .Select(c => new UsuarioResponse // Rellena el response
                                 {
                                 Id = c.Id,

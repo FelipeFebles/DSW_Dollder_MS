@@ -1,4 +1,7 @@
 ﻿using DSW_ApiNoConformidades_Dollder_MS.Aplication.Commands.Acciones;
+using DSW_ApiNoConformidades_Dollder_MS.Aplication.Mappers.Calendario;
+using DSW_ApiNoConformidades_Dollder_MS.Aplication.Queries.NoConformidades;
+using DSW_ApiNoConformidades_Dollder_MS.Aplication.Requests.NoConformidad;
 using DSW_ApiNoConformidades_Dollder_MS.Application.Requests.AccionesCorrectivas;
 using DSW_ApiNoConformidades_Dollder_MS.Application.Responses.Acciones;
 using DSW_ApiNoConformidades_Dollder_MS.Core.Entities;
@@ -14,10 +17,13 @@ namespace DSW_ApiAccioneses_Dollder_MS.Aplication.Handlers.Commands.Acciones
     {
         private readonly ApiDbContext _dbContext;
         private readonly ILogger<ActualizarAccionesHandler> _logger;
-        public ActualizarAccionesHandler(ApiDbContext dbContext, ILogger<ActualizarAccionesHandler> logger)
+        private readonly MediatR.IMediator _mediator;
+
+        public ActualizarAccionesHandler(ApiDbContext dbContext, ILogger<ActualizarAccionesHandler> logger, MediatR.IMediator mediator)
         {
             _dbContext = dbContext;
             _logger = logger;
+            _mediator = mediator;
         }
 
         public Task<IdAccionesResponse> Handle(ActualizarAccionesCommand request, CancellationToken cancellationToken)
@@ -55,6 +61,15 @@ namespace DSW_ApiAccioneses_Dollder_MS.Aplication.Handlers.Commands.Acciones
                 if (Acciones == null)
                 {
                     throw new InvalidOperationException("Registro fallido: La Accion NO existe");
+                }
+
+                if (request._request.fecha_compromiso != null) 
+                {
+                    var query = new BuscarNoConformidadCompletaQuery(new IdNoConformidadRequest { Data = Acciones.Id });
+                    var response = await _mediator.Send(query);
+                    var calendario = CalendarioMapper.MapCalendarioEntity2(request._request.fecha_compromiso, "Se establecio una fecha de compromiso de una acción, de la no conformidad: "+ response.noConformidad.numero_expedicion);
+                    _dbContext.Calendario.Add(calendario);
+                    await _dbContext.SaveEfContextChanges("APP");
                 }
                 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
                 ///     Actualizo el Acciones

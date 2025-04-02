@@ -1,5 +1,6 @@
 ﻿using DSW_ApiNoConformidades_Dollder_MS.Aplication.Commands.Cierre;
 using DSW_ApiNoConformidades_Dollder_MS.Aplication.Commands.NoConformidad;
+using DSW_ApiNoConformidades_Dollder_MS.Aplication.Mappers.Calendario;
 using DSW_ApiNoConformidades_Dollder_MS.Aplication.Mappers.Cierre;
 using DSW_ApiNoConformidades_Dollder_MS.Aplication.Mappers.Indicadores;
 using DSW_ApiNoConformidades_Dollder_MS.Aplication.Responses.Cierre;
@@ -86,6 +87,14 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Aplication.Handlers.Commands.Cierre
                     _dbContext.R_Indicadores_Causas.Add(response3);
                     await _dbContext.SaveEfContextChanges("APP");
                 }
+
+
+                //Agrego la notificacion al calendario
+                var nc = _dbContext.NoConformidad.Where(n => n.Id == request._request.noConformidad_Id).FirstOrDefault();
+                var calendario = CalendarioMapper.MapCalendarioEntityVerificacion(request._request.fecha_verificacion, "Verificación de efectividad de la no conformidad: " + nc.numero_expedicion);
+
+                _dbContext.Calendario.Add(calendario);
+                await _dbContext.SaveEfContextChanges("APP");
 
                 transaccion.Commit();
 

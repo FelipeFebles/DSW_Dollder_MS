@@ -48,7 +48,7 @@ namespace DSW_ApiNoConformidades_Dollder_MS.Application.Handlers.Queries.Usuario
             {
                 // Obtener el departamento y su usuario asociado
                 var departamentoConUsuario = _dbContext.Departamento
-                                        .Where(d => d.nombre.ToLower().Contains(request._request.data.ToLower())) // Filtra por el nombre del departamento en minúsculas
+                                        .Where(d => d.nombre.ToLower().Contains(request._request.data.ToLower())  && d.estado == true) // Filtra por el nombre del departamento en minúsculas
                                         .Join(_dbContext.Usuario, // Une con la tabla Usuario
                                                 departamento => departamento.Id, // Clave primaria en Departamento
                                                 usuario => usuario.departamento_Id, // Clave foránea en Usuario
